@@ -23,11 +23,7 @@
     background-color: rgb(58, 58, 58);
     border: gray 2px solid;
     color:white;
-    view-timeline-name: --card;
-    view-timeline-axis: block;
-    animation-timeline: --card;
-    animation-name: show;
-    animation-range: entry -20% cover 45%;
+    
 }
 
 @keyframes show{
@@ -83,6 +79,7 @@
   font-weight: 700;
   font-style: normal;
   color: #dc3545;
+  text-shadow: 0px 0px 15px  rgb(224, 99, 99);
 }
 
 .fa-solid{

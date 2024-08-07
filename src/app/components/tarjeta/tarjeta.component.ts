@@ -28,8 +28,8 @@ export class TarjetaComponent implements OnInit {
     {
       url: '../assets/images/login.png',
       titulo: 'Login',
-      descripcion: 'Experimentación ASP.NET MVC',
-      tecnologias: ['Laravel', 'HTML', 'CSS', 'Figma']
+      descripcion: 'Experimentación Figma',
+      tecnologias: ['Figma']
 
 
     }
