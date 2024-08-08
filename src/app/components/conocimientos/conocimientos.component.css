@@ -16,8 +16,9 @@
   }
 
   .fa-brands{
-    color: #ffffff;
-    font-size: 92px;
+    color: #fffefe;
+    font-size: 28px;
+    transform: translateY(-20px);
   }
   @media screen and (max-width: 500px) {
     .fa-brands{
