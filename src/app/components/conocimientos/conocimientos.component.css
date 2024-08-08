@@ -5,6 +5,7 @@
   font-style: normal;
   color: #dc3545;
   text-shadow: 0px 0px 15px  rgb(224, 99, 99);
+  margin-bottom: 74px;
 }
   .card{
     background-color:#ff000028;
@@ -18,12 +19,37 @@
   .fa-brands{
     color: #fffefe;
     font-size: 28px;
-    transform: translateY(-20px);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  .sombra{
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .pattern{
+    background-image: url('../../../assets/images/flowers.png'); 
+  }
+  .pattern2{
+    background-image: url('../../../assets/images/manos.jpg'); 
+    background-position: center;
+    font-size: 38px;
+    text-wrap: wrap;
+
+  }
+  .pattern3{
+    background-image: url('../../../assets/images/docker.png'); 
+    background-position: center;
+    font-size: 38px !important;
+    text-wrap: wrap;
+
+  }
+  
+
+ 
   @media screen and (max-width: 500px) {
     .fa-brands{
         color: #ffffff;
-        font-size: 64px;
+        font-size: 14px;
       }
       .title{
         font-size: 19px;
