@@ -58,7 +58,7 @@
     position: relative; /* Para que el pseudo-elemento se posicione correctamente */
     width: 315px;
     height: 315px;
-    background-image: url(../../../assets/images/2.png);
+    background-image: url("../../../assets/images/2.png");
     background-position: 0px -55px;
     background-size: cover;
 
@@ -68,7 +68,7 @@
     position: relative; 
     width: 315px;
     height: 315px;
-    background-image: url(../../../assets/images/1.png);
+    background-image: url("../../../assets/images/1.png");
     background-size: cover;
     background-position: center;  
     animation: encima-reverse .6s backwards ease;
