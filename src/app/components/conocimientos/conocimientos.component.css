@@ -1,12 +1,4 @@
-.title {
-  text-align: center;
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #dc3545;
-  text-shadow: 0px 0px 15px rgb(224, 99, 99);
-  margin-bottom: 74px;
-}
+
 
 .card {
   background-color: #ff000028;
@@ -28,33 +20,44 @@
 }
 
 .pattern {
-  background-image: url("../../../assets/images/flowers.png");
+  
+  object-fit: fit;
+
+  &:hover {
+    animation: rotar 3s infinite linear !important;
+  }
 }
 .pattern2 {
+  background-image: url("../../../assets/images/flowers.png");
   font-size: 34px;
   text-wrap: wrap;
-  transform: 2s;
-  
-  &:hover{
-    animation: leve .4s both linear alternate;
+  animation: leve-reverse 0.2s forwards linear;
+
+  &:hover {
+    animation: leve 0.4s forwards ease-in alternate;
+  }
+  &::before {
+    animation: leve-reverse 0.2s forwards ease-out alternate-reverse;
   }
 }
 @keyframes leve {
-  0%{
-    transform: rotate3d(1, .5, .5, 0deg); /* Estado inicial */
+  0% {
+    transform: rotate3d(1, 0.5, 0.5, 0deg); 
   }
-  100%{
-    
-    transform: rotate3d(1, .5, .5, -12deg); /* Rotación alrededor del eje X */
-    
+  100% {
+    transform: rotate3d(1, 0.5, 0.5, -5deg); 
   }
-  
 }
 
-
-.flip:hover{
-  animation: rotar 3s infinite linear !important;
+@keyframes leve-reverse {
+  0% {
+    transform: rotate3d(1, 0.5, 0.5, -5deg); 
+  }
+  100% {
+    transform: rotate3d(1, 0.5, 0.5, 0deg); 
+  }
 }
+
 i:hover {
   color: #dc3545;
 }
@@ -64,8 +67,31 @@ i:hover {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  background: linear-gradient(rgba(255, 255, 255, 0.17),gray);
-  
+}
+.handjet2 {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 28px;
+}
+.section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Keyframes animaciones */
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 5%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 @keyframes rotar {
@@ -80,27 +106,14 @@ i:hover {
 @keyframes rotar-invertido {
   0% {
     transform: rotateY(0deg);
-    
   }
   100% {
     transform: rotateY(180deg);
     opacity: 1;
-  
   }
 }
 
- .back{
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  background-color: white;
- }
- .back:hover{
-  animation: rotar-invertido 1s forwards linear;
-
- }
-
-
+/* MediaQuery */
 @media screen and (max-width: 500px) {
   .fa-brands {
     color: #ffffff;
@@ -108,16 +121,5 @@ i:hover {
   }
   .title {
     font-size: 34px;
-  }
-  
-}
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 5%;
-  }
-  to {
-    opacity: 1;
-    scale: 100%;
   }
 }
