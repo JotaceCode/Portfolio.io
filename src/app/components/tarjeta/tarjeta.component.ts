@@ -11,10 +11,10 @@ import { Component, OnInit } from '@angular/core';
 export class TarjetaComponent implements OnInit {
   listProyectos: any[] = [
     {
-      url: '../assets/images/1.png',
-      titulo: 'Gymnasio',
-      descripcion: 'Práctica con MVC',
-      tecnologias: ['Php', 'HTML', 'CSS']
+      url: '../assets/images/Broom.png',
+      titulo: 'BROOM',
+      descripcion: 'Proyecto final del Grado Superior, pretende organizar y facilitar el trabajo de limpieza de las habitaciones de un hotel',
+      tecnologias: ['Angular', 'HTML', 'CSS', 'C#']
 
     },
     {
@@ -28,7 +28,7 @@ export class TarjetaComponent implements OnInit {
     {
       url: '../assets/images/login.png',
       titulo: 'Login',
-      descripcion: 'Experimentación Figma',
+      descripcion: 'Experimentación Figma, desarrollo UI de un componente LOGIN con iconos y animaciones',
       tecnologias: ['Figma']
 
 
