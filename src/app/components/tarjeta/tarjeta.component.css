@@ -4,29 +4,60 @@
     overflow: hidden;
     filter: brightness(1);
     object-fit: cover;
-
-
-}
-.imagen:hover{
-  filter: brightness(1.2);
-
+    &:hover{
+      filter: brightness(1.2);
+    }
 }
 
-.card:hover{
-    border: 2px solid #dc3545;
-    animation: encima .6s ease forwards;
-    
-}
+
 
 .card{
     box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.362);
-    animation-name: encima-reverse 1.6s backwards ease; 
     background-color: rgb(58, 58, 58);
     border: gray 2px solid;
     color:white;
     height: 500px;
-    
-    
+    &:hover{
+      border: 2px solid #dc3545;
+    animation: encima .3s forwards ease-in;
+    }
+    &:not(:hover){
+      animation: encima-reverse .3s forwards ease-out;
+    }
+}
+
+
+.fa-brands{
+    font-size: 30px;
+}
+
+.mb-200{
+  margin-bottom: 200px;
+}
+
+
+.fa-solid{
+  position: relative;
+  top: 35px;
+}
+
+/* KEYFRAMES FOR ANIMATIONS */
+@keyframes encima {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes encima-reverse {
+  0% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
 
 @keyframes show{
@@ -48,36 +79,4 @@
   to {
     opacity: 1; 
   }
-}
-
-.fa-brands{
-    font-size: 30px;
-}
-
-@keyframes encima {
-  0% {
-      transform: translateY(0);
-  }
-  100% {
-      transform: translateY(-15px);
-  }
-}
-
-@keyframes encima-reverse {
-  0% {
-      transform: translateY(-15px);
-  }
-  100% {
-      transform: translateY(0);
-  }
-}
-
-.mb-300{
-  margin-bottom: 200px;
-}
-
-
-.fa-solid{
-  position: relative;
-  top: 35px;
 }
