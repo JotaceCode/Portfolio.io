@@ -47,18 +47,18 @@
 }
 
 .fa-brands{
-    font-size: 52px;
+    font-size: 28px;
     animation: aparecer2 1.8s forwards ease;
-}
-
-.fa-brands:hover{
-    color: #dc3545 !important;
+    &:hover{
+        color: #dc3545 !important;
+        scale: 1.5;
+    }
 }
 .abajo {
     position: relative; /* Para que el pseudo-elemento se posicione correctamente */
     width: 315px;
     height: 315px;
-    background-image: url("../../../assets/images/2.png");
+    background-image: url("../../../assets/images/2.jpeg");
     background-position: 0px -55px;
     background-size: cover;
 
@@ -71,13 +71,16 @@
     background-image: url("../../../assets/images/1.png");
     background-size: cover;
     background-position: center;  
-    animation: encima-reverse .6s backwards ease;
-
+    
+    &:hover {
+        animation: encima .6s forwards ease;
+    }
+    &:not(:hover){
+        animation: encima-reverse .6s backwards ease;
+    }
 }
 
-.arriba:hover {
-    animation: encima .6s forwards ease;
-}
+
 
 @keyframes encima {
     0% {
@@ -85,15 +88,18 @@
     }
     100% {
         transform: translateY(-15px);
+        scale: 1.1;
     }
 }
 
 @keyframes encima-reverse {
     0% {
         transform: translateY(-15px);
+        scale:1.1
     }
     100% {
         transform: translateY(0);
+        scale: 1;
     }
 }
 
