@@ -1,19 +1,20 @@
 <nav class="navbar bg-body-secondary">
-    <div class="container d-flex justify-content-between align-items-center ">
-        <a class="navbar-brand text-nav" href="/">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-nav" [routerLink]="['/']">
             <img src="../assets/images/logo.png" 
-            alt="Logo" width="135" height="30" class="d-inline-block align-text-top">
+                 alt="Logo" width="135" height="30" class="d-inline-block align-text-top">
             Home
         </a>
         <div>
-            <a class="navbar-brand ml-auto text-nav" href="/">Sobre mi</a>
-            <a class="navbar-brand ml-auto text-nav" href="/">Proyectos</a>
-            <a class="navbar-brand ml-auto text-nav" href="/" >Contacto</a>
+            <a class="navbar-brand ml-auto text-nav" [routerLink]="['/']" fragment="">Sobre mi</a>
+            <a class="navbar-brand ml-auto text-nav" [routerLink]="['/']" fragment="proyectos">Proyectos</a>
+            <a class="navbar-brand ml-auto text-nav" [routerLink]="['/contacto']">Contacto</a>
             <a href="https://mega.nz/file/hutxQabB#bsFvgfKpv7lIRklxa_yCwfBh3UdNiHKXW8lcfRqBE1Q">
-            <button type="button" class="btn btn-outline-danger ml-auto" >
-                <i class="fa-solid fa-arrow-down"></i>&nbsp;
-                Currículum Vitae
-            </button></a>
+                <button type="button" class="btn btn-outline-danger ml-auto">
+                    <i class="fa-solid fa-arrow-down"></i>&nbsp;
+                    Currículum Vitae
+                </button>
+            </a>
         </div>
     </div>
 </nav>
