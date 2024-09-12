@@ -1,29 +1,56 @@
-<section class="container mt-5 mb-200" id="proyecto" >
-    <div class="d-flex justify-content-center title">
-        <h1 class="title mt-3 mb-3">Proyectos</h1>
-    </div>
-    <div class="row d-flex justify-content-evenly">
-        <div class="row d-flex justify-content-evenly" *ngFor="let fila of proyectosPorFilas">
-            <div class="col-lg-3" *ngFor="let proyecto of fila; let i = index;">
-              <div class="card mt-3">
-                <div class="card-img-top imagen">
-                  <img [src]="proyecto.url" alt="" />
-                </div>
-                <div class="card-body">
-                  <h3 class="titulo">{{ proyecto.titulo }}</h3>
-                  <p>{{ proyecto.descripcion }}</p>
-                </div>
-                <div class="card-footer d-flex justify-content-around p-3">
-                  <i class="fa-brands fa-angular" *ngIf="proyecto.tecnologias.includes('Angular')"></i>
-                  <i class="fa-brands fa-html5" *ngIf="proyecto.tecnologias.includes('HTML')"></i>
-                  <i class="fa-brands fa-php" *ngIf="proyecto.tecnologias.includes('Php')"></i>
-                  <i class="fa-brands fa-css3-alt" *ngIf="proyecto.tecnologias.includes('CSS')"></i>
-                  <i class="fa-brands fa-laravel" *ngIf="proyecto.tecnologias.includes('Laravel')"></i>
-                  <i class="fa-brands fa-node" *ngIf="proyecto.tecnologias.includes('Node')"></i>
-                  <i class="fa-brands fa-figma" *ngIf="proyecto.tecnologias.includes('Figma')"></i>
-                </div>
-              </div>
+<section class="container mt-5 mb-200" id="proyecto">
+  <div class="d-flex justify-content-center title">
+    <h1 class="title mt-3 mb-3">Proyectos</h1>
+  </div>
+  <div class="row d-flex justify-content-evenly">
+    <div
+      class="row d-flex justify-content-evenly"
+      *ngFor="let fila of proyectosPorFilas"
+    >
+      <div class="col-lg-3" *ngFor="let proyecto of fila; let i = index">
+        <a (click)="navegar(proyecto.url)" >
+        <!-- Arreglar enlaces IMPORTANTE!!!! -->
+         <!--  -->
+          ><div class="card mt-3">
+            <div class="card-img-top imagen">
+              <img [src]="proyecto.urlImage" alt="" />
             </div>
-          </div>
+            <div class="card-body">
+              <h3 class="titulo">{{ proyecto.titulo }}</h3>
+              <p>{{ proyecto.descripcion }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-around p-3">
+              <i
+                class="fa-brands fa-angular"
+                *ngIf="proyecto.tecnologias.includes('Angular')"
+              ></i>
+              <i
+                class="fa-brands fa-html5"
+                *ngIf="proyecto.tecnologias.includes('HTML')"
+              ></i>
+              <i
+                class="fa-brands fa-php"
+                *ngIf="proyecto.tecnologias.includes('Php')"
+              ></i>
+              <i
+                class="fa-brands fa-css3-alt"
+                *ngIf="proyecto.tecnologias.includes('CSS')"
+              ></i>
+              <i
+                class="fa-brands fa-laravel"
+                *ngIf="proyecto.tecnologias.includes('Laravel')"
+              ></i>
+              <i
+                class="fa-brands fa-node"
+                *ngIf="proyecto.tecnologias.includes('Node')"
+              ></i>
+              <i
+                class="fa-brands fa-figma"
+                *ngIf="proyecto.tecnologias.includes('Figma')"
+              ></i>
+            </div></div
+        ></a>
+      </div>
     </div>
+  </div>
 </section>

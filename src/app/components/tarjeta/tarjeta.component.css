@@ -9,7 +9,11 @@
     }
 }
 
-
+a{
+  font-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .card{
     box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.362);
@@ -48,12 +52,14 @@
   }
   100% {
       transform: translateY(-15px);
+      
   }
 }
 
 @keyframes encima-reverse {
   0% {
       transform: translateY(-15px);
+      
   }
   100% {
       transform: translateY(0);
