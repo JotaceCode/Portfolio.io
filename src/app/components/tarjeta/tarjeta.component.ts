@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarjeta',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule],
   templateUrl: './tarjeta.component.html',
-  styleUrls: ['./tarjeta.component.css'], // Cambiado a 'styleUrls'
+  styleUrls: ['./tarjeta.component.css'], 
 })
 export class TarjetaComponent implements OnInit {
   listProyectos: any[] = [
     {
-      urlImage: '../assets/images/Broom.png',
+      urlImage: '../assets/images/3.webp',
       titulo: 'BROOM - TFG',
       descripcion: 'Proyecto final del Grado Superior, pretende organizar y facilitar el trabajo de limpieza de las habitaciones de un hotel',
       tecnologias: ['Angular', 'HTML', 'CSS', 'C#'],
@@ -34,13 +34,12 @@ export class TarjetaComponent implements OnInit {
     }
   ];
 
-  constructor(private router: Router) {} // Cambio de Route a Router
+  constructor(private router: Router) {} 
 
   ngOnInit(): void {}
 
   navegar(url: string) {
     if (url) {
-      //console.log(url); 
       window.open(url, '_blank'); 
     } else {
       console.log('No URL provided');
