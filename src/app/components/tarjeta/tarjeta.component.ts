@@ -37,6 +37,12 @@ export class TarjetaComponent implements OnInit {
       descripcion: 'Experimentación con Next.js y React 19',
       tecnologias: ['React', 'HTML', 'CSS', 'Node'],
       url: ""
+    },{
+      urlImage: '../assets/images/capt.png',
+      titulo: 'OnuCode Web-App',
+      descripcion: 'Web-App para OnuCode, diseñadores y programadores que buscan nuevos retos que impulsen su carrera profesional',
+      tecnologias: ['Angular', 'HTML', 'CSS', 'Node'],
+      url: ""
     }
   ];
 
