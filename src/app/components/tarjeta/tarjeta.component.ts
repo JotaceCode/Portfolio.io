@@ -31,6 +31,12 @@ export class TarjetaComponent implements OnInit {
       descripcion: 'Experimentación Node con gestión de ficheros',
       tecnologias: ['Node','Javascript'],
       url: "https://github.com/JotaceCode/CLI-Task-Tracker-1D1P"
+    },{
+      urlImage: '../assets/images/3.png',
+      titulo: 'Generador de contraseñas Seguras',
+      descripcion: 'Experimentación con Next.js y React 19',
+      tecnologias: ['React', 'HTML', 'CSS', 'Node'],
+      url: ""
     }
   ];
 
