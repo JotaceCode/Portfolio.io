@@ -3,17 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background: linear-gradient(to right, #1B1B1B,#2C2329); 
+    background: #000512 !important; 
     
 }
 .title {
-    text-align: center;
     font-family: "Silkscreen", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #dc3545;
   }
 
   html {
     scroll-behavior: smooth;
 }
+
