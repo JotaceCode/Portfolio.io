@@ -1,63 +1,31 @@
-<section class="container mt-5 mb-200" id="proyecto">
-  <div class="d-flex justify-content-center title">
-    <h1 class="title mt-3 mb-3">Proyectos</h1>
-  </div>
-  <div class="row d-flex justify-content-evenly">
+<section class="w-[90%] md:w-1/2 mx-auto mt-10 mb-20" id="proyecto">
+  <h1 class="text-[#34cceb]  title  mb-6">Proyectos<span class="text-yellow-200 text-[12px] ml-2">+10 proyectos</span></h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="row d-flex justify-content-evenly"
-      *ngFor="let fila of proyectosPorFilas"
+      *ngFor="let proyecto of listProyectos"
+      class="bg-[#1d2336] border-1 border-[#34cceb] text-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
     >
-      <div class="col-lg-3" *ngFor="let proyecto of fila; let i = index">
-        <a (click)="navegar(proyecto.url)" >
-        <!-- Arreglar enlaces IMPORTANTE!!!! -->
-         <!--  -->
-          ><div class="card mt-3">
-            <div class="card-img-top imagen">
-              <img [src]="proyecto.urlImage" alt="" />
-            </div>
-            <div class="card-body">
-              <h3 class="titulo">{{ proyecto.titulo }}</h3>
-              <p class="text-[28px] sm:text-[21px]">{{ proyecto.descripcion }}</p>
-            </div>
-            <div class="card-footer d-flex justify-content-around p-3">
-              <i
-                class="fa-brands fa-angular"
-                *ngIf="proyecto.tecnologias.includes('Angular')"
-              ></i>
-              <i
-                class="fa-brands fa-html5"
-                *ngIf="proyecto.tecnologias.includes('HTML')"
-              ></i>
-              <i
-                class="fa-brands fa-php"
-                *ngIf="proyecto.tecnologias.includes('Php')"
-              ></i>
-              <i
-                class="fa-brands fa-css3-alt"
-                *ngIf="proyecto.tecnologias.includes('CSS')"
-              ></i>
-              <i
-                class="fa-brands fa-laravel"
-                *ngIf="proyecto.tecnologias.includes('Laravel')"
-              ></i>
-              <i
-                class="fa-brands fa-node"
-                *ngIf="proyecto.tecnologias.includes('Node')"
-              ></i>
-              <i
-                class="fa-brands fa-figma"
-                *ngIf="proyecto.tecnologias.includes('Figma')"
-              ></i>
-              <i
-                class="fa-brands fa-react"
-                *ngIf="proyecto.tecnologias.includes('React')"
-              ></i>
-              
-              <img src="../assets/images/c-sharp-c.svg" alt=""
-              *ngIf="proyecto.tecnologias.includes('C#')" width="24px">
-            </div></div
-        ></a>
-      </div>
+      <a (click)="navegar(proyecto.url)" class="block">
+        <img [src]="proyecto.urlImage" alt="{{ proyecto.titulo }}" class="w-full h-48 object-cover" />
+
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-[#34cceb]">{{ proyecto.titulo }}</h3>
+          <p class="text-gray-400 text-sm mt-2">{{ proyecto.descripcion }}</p>
+        </div>
+
+        <div class="flex justify-around p-3 border-t border-gray-600">
+          <i class="fa-brands fa-angular" *ngIf="proyecto.tecnologias.includes('Angular')"></i>
+          <i class="fa-brands fa-html5" *ngIf="proyecto.tecnologias.includes('HTML')"></i>
+          <i class="fa-brands fa-php" *ngIf="proyecto.tecnologias.includes('Php')"></i>
+          <i class="fa-brands fa-css3-alt" *ngIf="proyecto.tecnologias.includes('CSS')"></i>
+          <i class="fa-brands fa-laravel" *ngIf="proyecto.tecnologias.includes('Laravel')"></i>
+          <i class="fa-brands fa-node" *ngIf="proyecto.tecnologias.includes('Node')"></i>
+          <i class="fa-brands fa-figma" *ngIf="proyecto.tecnologias.includes('Figma')"></i>
+          <i class="fa-brands fa-react" *ngIf="proyecto.tecnologias.includes('React')"></i>
+          <img src="../assets/images/c-sharp-c.svg" alt="C#" *ngIf="proyecto.tecnologias.includes('C#')" width="24px">
+        </div>
+      </a>
     </div>
   </div>
 </section>

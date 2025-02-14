@@ -12,6 +12,12 @@ import { Router } from '@angular/router';
 export class TarjetaComponent implements OnInit {
   listProyectos: any[] = [
     {
+      urlImage: '../assets/images/3.png',
+      titulo: 'OnuCode',
+      descripcion: 'Plataforma de retos para programadores y diseñadores',
+      tecnologias: ['Angular', 'HTML', 'CSS', 'Node'],
+      url: ""},
+    {
       urlImage: '../assets/images/3.webp',
       titulo: 'BROOM - TFG',
       descripcion: 'Proyecto final del Grado Superior, pretende organizar y facilitar el trabajo de limpieza de las habitaciones de un hotel',
@@ -57,6 +63,7 @@ export class TarjetaComponent implements OnInit {
       console.log('No URL provided');
     }
   }
+  
 
   // Método que devuelve un array de tres proyectos por fila (para mostrar 3 por row en la vista)
   get proyectosPorFilas() {

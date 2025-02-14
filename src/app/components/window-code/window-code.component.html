@@ -1,0 +1,46 @@
+<section class="w-[90%] flex flex-col lg:flex-row md:w-1/2 mx-auto justify-center items-center gap-10 sm:mt-20">
+    <div class="w-full lg:w-1/2 text-center">
+        <h1 class="text-[#34cceb] title ">¡Hola Mundo!<i class="fas fa-code text-[#34cceb]"></i>
+        </h1>
+        <p class="text-gray-400    w-[90%] ">
+            Desarrollador Full Stack comprometido con la calidad y la eficiencia en el desarrollo de software.
+            Diseño UI/UX y desarrollo de aplicaciones web y móviles.
+
+        </p>
+        <span class="flex flex-col gap-2 lg:flex-row justify-between mt-2">
+            <button class="bg-[#34cceb] text-white px-4 py-4 rounded-md  hover:bg-blue-950 text-[31px] md:text-[14px]">
+                <i class="fab fa-github text-white"></i> Perfil de Github
+            </button>
+            <button class="border-1 border-[#34cceb] text-white px-3 py-2 rounded-md hover:bg-blue-950 hover:text-white text-[31px] md:text-[14px]">
+                <i class="fab fa-linkedin-in"></i> Perfil de Linkedin
+            </button>
+        </span>
+    </div>
+    <div id="window-code"
+        class="window-code rounded-md border-1 border-[#34cceb] w-full lg:w-2/3 h-fit bg-[#1d2336] text-white shadow-lg shadow-[135px] shadow-[#34cceb]">
+
+        <!-- Encabezado de la ventana -->
+        <div class="window-code__header h-10 bg-[#29324a] rounded-t-md flex items-center justify-between px-3">
+            <span>
+                <img src="../../assets/icons/dots.svg" alt="Control Buttons" width="42">
+            </span>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-code text-[#34cceb]"></i>
+                <span class="text-[#34cceb] font-semibold">developer.js</span>
+            </div>
+            <button class="text-[#34cceb] hover:text-red-500 transition" (click)="closeWindow()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="window-code__content overflow-auto h-[430px] px-3 py-2">
+            <div class="flex gap-1">
+
+                <!-- Código formateado -->
+                <pre class="">
+                    <code class="text-[#34cceb] text-[12px] ">{{ codigo }}</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>

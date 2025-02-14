@@ -1,9 +1,8 @@
 .imagen{
     width: 100%;
-    height: auto;
+    height: 62px;
     overflow: hidden;
     filter: brightness(1);
-    object-fit: cover;
     &:hover{
       filter: brightness(1.2);
     }
@@ -15,20 +14,6 @@ a{
   cursor: pointer;
 }
 
-.card{
-    box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.362);
-    background-color: rgb(58, 58, 58);
-    border: gray 2px solid;
-    color:white;
-    height: 500px;
-    &:hover{
-      border: 2px solid #dc3545;
-    animation: encima .3s forwards ease-in;
-    }
-    &:not(:hover){
-      animation: encima-reverse .3s forwards ease-out;
-    }
-}
 
 
 .fa-brands{
