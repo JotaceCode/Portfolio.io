@@ -16,20 +16,21 @@ export class WindowCodeComponent {
  codigo =
  `  
     1    const developer = {
-    2      name: "JotaceCode",
-    3      role: "Full Stack Developer",
-    4      technologies: ["JavaScript", "TypeScript", "Angular", "Node.js"],
-    5      contact: {
-    6        email: "jo@example.com",
-    7        linkedin: "linkedin.com/in/jotacecode",
-    8        github: "github.com/jotacecode"
-    9      },
-    10     sayHello: function () {
-    11       return "¡Hola, mundo! Soy JotaceCode 🚀";
-    12     }
-    13   };
-    14   
-    15   console.log(developer.sayHello());`;
+    2      name: "Jose Carlos",
+    3      surname: "Vélez Seisdedos",
+    4      role: "Full Stack Developer",
+    5      technologies: ["JavaScript", "TypeScript", "Angular", "Node.js"],
+    6      contact: {
+    7        email: "josvelsei@gmail.com",
+    8        linkedin: "linkedin.com/in/jotacecode",
+    9        github: "github.com/jotacecode"
+    10     },
+    11     sayHello: function () {
+    12       return "¡Hola, mundo! Soy JotaceCode 🚀";
+    13     }
+    14   };
+    15   
+    16   console.log(developer.sayHello());`;
     
 
   
