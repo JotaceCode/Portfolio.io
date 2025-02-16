@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./tarjeta.component.css'], 
 })
 export class TarjetaComponent implements OnInit {
-  listProyectos: any[] = [
+  listProyectosR: any[] = [
     {
       urlImage: '../assets/images/3.png',
       titulo: 'OnuCode',
@@ -51,6 +51,8 @@ export class TarjetaComponent implements OnInit {
       url: ""
     }
   ];
+
+  listProyectos = this.listProyectosR.reverse();
 
   constructor(private router: Router) {} 
 

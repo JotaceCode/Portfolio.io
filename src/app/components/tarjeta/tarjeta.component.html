@@ -6,7 +6,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
       *ngFor="let proyecto of listProyectos"
-      class="bg-[#1d2336] border border-[#34cceb] text-white rounded-lg shadow-lg overflow-hidden 
+      class="bg-[#1d2336] border-1 border-[#34cceb] text-white rounded-lg shadow-lg overflow-hidden 
              transition-transform transform hover:scale-105 min-h-[400px] max-h-[420px] relative flex flex-col"
     >
       <a (click)="navegar(proyecto.url)" class="block flex-1">
