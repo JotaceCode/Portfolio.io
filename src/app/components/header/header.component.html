@@ -1,15 +1,16 @@
-<nav class="w-full sm:w-1/2 mx-auto  h-20 flex items-center justify-between px-4 sm:px-0">
+<!-- Navbar principal -->
+<nav class="w-full sm:w-1/2 mx-auto h-20 flex items-center justify-between px-4 sm:px-0">
     <a [routerLink]="['/']" class="flex items-center gap-2">
-        <img src="../assets/icons/Untitled.svg" alt="Logo" width="62" >
-        <span class="hidden md:block">JotaceCode</span> 
+        <img src="../assets/icons/Untitled.svg" alt="Logo" width="62">
+        <span class="hidden md:block">JotaceCode</span>
     </a>
-    
+
     <span class="flex gap-1 hidden sm:block">
-        <a href="">
+        <a href="#">
             <i class="fa-brands fa-linkedin" style="color: #34cceb;"></i>
         </a>
-        <a href="">
-        <i class="fa-brands fa-square-github" style="color: #34cceb;"></i>
+        <a href="#">
+            <i class="fa-brands fa-square-github" style="color: #34cceb;"></i>
         </a>
     </span>
 
@@ -19,10 +20,18 @@
 </nav>
 
 <!-- Menú desplegable -->
-<nav class="absolute w-full bg-[#29324a] h-[100%]  flex justify-center" *ngIf="showMenu">
-    <div class="flex flex-col justify-center items-center space-y-2">
-        <a [routerLink]="['/']">HOME</a>
-        <a [routerLink]="['/about']">ABOUT ME // SOBRE MI</a>
-        <a [routerLink]="['/contact']">CONTACT // CONTACTO</a>
+<nav *ngIf="showMenu"
+    class="fixed top-0 left-0 w-full h-full bg-[#29324a] flex flex-col items-center justify-center 
+           z-50 transition-opacity duration-300 opacity-100">
+    
+    <!-- Botón de cierre -->
+    <button (click)="toggleMenu()" class="absolute top-5 right-5 text-white text-2xl">
+        ✖
+    </button>
+
+    <div class="flex flex-col items-center space-y-6 text-white text-xl">
+        <a [routerLink]="['/']" (click)="toggleMenu()">HOME</a>
+        <a [routerLink]="['/about']" (click)="toggleMenu()">ABOUT ME // SOBRE MI</a>
+        <a [routerLink]="['/contact']" (click)="toggleMenu()">CONTACT // CONTACTO</a>
     </div>
 </nav>
