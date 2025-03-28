@@ -1,39 +1,7 @@
 <section class="w-[90%]  lg:w-1/2 mx-auto justify-center items-center gap-10 sm:mt-20 " id="tecnologias">
-    <h1 class="text-[#34cceb] title text-left">Tecnologías &nbsp;<i class="fas fa-code text-[#34cceb]"></i></h1>
-    <div class="grid grid-cols-5 grid-rows-5 gap-4 text-center  w-full mx-auto mt-10 ">
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="assets/icons/mysql.svg" alt="logo my sql" width="80"></div>
-        <div class="px-3 py-4 bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="40">
+        <h1 class="text-[#34cceb] title text-left">Tecnologías &nbsp;<i class="fas fa-code text-[#34cceb]"></i></h1>
+        <div class="grid grid-cols-5 grid-rows-5 gap-4 text-center  w-full mx-auto mt-10 ">
+                <div *ngFor="let tech of techList" class="bg-[#29324a] border-1 border-[#34cceb]  text-white rounded-sm flex justify-center items-center p-2"><img
+                                [src]="tech.icon" [alt]="tech.alt" width="60"></div>
         </div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center windosh"><img
-                src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="40"></div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/angular/DA0037" alt="Angular" width="40"></div>
-
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/kubernetes/000000" width="40" alt="kubernetes"></div>
-
-
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/node.js/339933" alt="Node.js" width="40"></div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="40"></div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="40"></div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/github/181717" width="40" alt="github"></div>
-        <div class=" bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/postman/FF6C37" width="40" alt="postman"></div>
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/php/777BB4" width="40" alt="php"></div>
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/typescript/3178C6" width="40" alt="typescript"></div>
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/mongodb/47A248" width="40" alt="mongodb"></div>
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/sass/CC6699" width="40" alt="sass"></div>    
-        <div class="bg-[#29324a]  text-white rounded-sm flex justify-center items-center"><img
-                src="https://cdn.simpleicons.org/next.js/000000" width="40" alt="next.js"></div>
-    </div>
 </section>
