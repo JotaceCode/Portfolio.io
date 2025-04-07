@@ -42,7 +42,7 @@ export class TarjetaComponent implements OnInit {
       titulo: 'Generador de contraseñas Seguras',
       descripcion: 'Experimentación con Next.js y React 19',
       tecnologias: ['React', 'HTML', 'CSS', 'Node'],
-      url: ""
+      url: "https://safe-password-generator-vert.vercel.app"
     },{
       urlImage: '../assets/images/capt.png',
       titulo: 'OnuCode Web-App',
