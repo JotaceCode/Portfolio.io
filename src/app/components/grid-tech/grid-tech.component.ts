@@ -27,6 +27,7 @@ export class GridTechComponent {
     { name: 'Sass', icon: 'https://cdn.simpleicons.org/sass/C76494',  alt: 'Sass' },
     { name: 'jQuery', icon: 'https://cdn.simpleicons.org/jquery/0769AD', alt: 'jQuery' },
     { name: 'GitHub', icon: 'https://cdn.simpleicons.org/github/181717', alt: 'GitHub' },
+    { name: 'GitHub', icon: 'https://cdn.simpleicons.org/github/181717', alt: 'GitHub' },
     
   ];
 }
