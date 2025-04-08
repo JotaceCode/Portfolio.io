@@ -6,27 +6,99 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
       *ngFor="let proyecto of listProyectos"
-      class="bg-[#1d2336] border-1 border-[#34cceb] text-white rounded-lg shadow-lg overflow-hidden 
-             transition-transform transform hover:scale-105 min-h-[400px] max-h-[420px] relative flex flex-col"
+      class="bg-[#1d2336] border-1 border-[#34cceb] text-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 min-h-[400px] max-h-[420px] relative flex flex-col"
     >
       <a (click)="navegar(proyecto.url)" class="block flex-1">
-        <img [src]="proyecto.urlImage" alt="{{ proyecto.titulo }}" class="w-full h-48 object-cover" />
+        <img
+          [src]="proyecto.urlImage"
+          alt="{{ proyecto.titulo }}"
+          class="w-full h-48 object-cover"
+        />
 
         <div class="p-4 flex-1">
-          <h3 class="text-xl font-bold text-[#34cceb]">{{ proyecto.titulo }}</h3>
-          <p class="text-gray-400 text-sm mt-2 overflow-hidden">{{ proyecto.descripcion }}</p>
+          <h3 class="titulo font-bold text-[#34cceb]">
+            {{ proyecto.titulo }}
+          </h3>
+          <p class="descripcion text-gray-400 text-sm mt-2 overflow-hidden">
+            {{ proyecto.descripcion }}
+          </p>
         </div>
 
-        <div class="flex justify-around p-3 border-t border-gray-600 absolute bottom-0 w-full bg-[#1d2336]">
-          <i class="fa-brands fa-angular" *ngIf="proyecto.tecnologias.includes('Angular')"></i>
-          <i class="fa-brands fa-html5" *ngIf="proyecto.tecnologias.includes('HTML')"></i>
-          <i class="fa-brands fa-php" *ngIf="proyecto.tecnologias.includes('Php')"></i>
-          <i class="fa-brands fa-css3-alt" *ngIf="proyecto.tecnologias.includes('CSS')"></i>
-          <i class="fa-brands fa-laravel" *ngIf="proyecto.tecnologias.includes('Laravel')"></i>
-          <i class="fa-brands fa-node" *ngIf="proyecto.tecnologias.includes('Node')"></i>
-          <i class="fa-brands fa-figma" *ngIf="proyecto.tecnologias.includes('Figma')"></i>
-          <i class="fa-brands fa-react" *ngIf="proyecto.tecnologias.includes('React')"></i>
-          <img src="../assets/images/c-sharp-c.svg" alt="C#" *ngIf="proyecto.tecnologias.includes('C#')" width="24px">
+        <div
+          class="flex justify-around p-3 border-t border-gray-600 absolute bottom-0 w-full bg-[#1d2336]"
+        >
+          <img
+            *ngIf="proyecto.tecnologias.includes('Angular')"
+            src="https://cdn.simpleicons.org/angular/DD0031"
+            alt="Angular"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('HTML')"
+            src="https://cdn.simpleicons.org/html5/E34F26"
+            alt="HTML5"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('Php')"
+            src="https://cdn.simpleicons.org/php/777BB4"
+            alt="PHP"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('Tailwind')"
+            src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+            alt="Tailwind CSS"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('Laravel')"
+            src="https://cdn.simpleicons.org/laravel/FF2D20"
+            alt="Laravel"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('Node')"
+            src="https://cdn.simpleicons.org/nodedotjs/339933"
+            alt="Node.js"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('Figma')"
+            src="https://cdn.simpleicons.org/figma/F24E1E"
+            alt="Figma"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('React')"
+            src="https://cdn.simpleicons.org/react/61DAFB"
+            alt="React"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('C#')"
+            src="../assets/images/c-sharp-c.svg"
+            alt="C#"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('MySQL')"
+            src="https://cdn.simpleicons.org/mysql/4479A1"
+            alt="MySQL"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('PostgreSQL')"
+            src="https://cdn.simpleicons.org/postgresql/336791"
+            alt="PostgreSQL"
+            width="24px"
+          />
+          <img
+            *ngIf="proyecto.tecnologias.includes('MongoDB')"
+            src="https://cdn.simpleicons.org/mongodb/47A248"
+            alt="MongoDB"
+            width="24px"
+          />
         </div>
       </a>
     </div>

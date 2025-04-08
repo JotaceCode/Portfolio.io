@@ -8,6 +8,19 @@
     }
 }
 
+.titulo{
+    font-size: 1rem;
+}
+
+.subtitulo{
+    font-size: 0.8rem;
+    color: #A9A9A9;
+}
+.descripcion{
+    font-size: 0.8rem;
+    color: #A9A9A9;
+}
+
 a{
   font-style: none;
   text-decoration: none;
