@@ -67,15 +67,15 @@ export class TarjetaComponent implements OnInit {
   }
   
 
-  // Método que devuelve un array de tres proyectos por fila (para mostrar 3 por row en la vista)
-  get proyectosPorFilas() {
-    const proyectos = [...this.listProyectos]; // Copiar la lista de proyectos
-    const proyectosPorFilas = [];
+  // // Método que devuelve un array de tres proyectos por fila (para mostrar 3 por row en la vista)
+  // get proyectosPorFilas() {
+  //   const proyectos = [...this.listProyectos]; // Copiar la lista de proyectos
+  //   const proyectosPorFilas = [];
 
-    while (proyectos.length > 0) {
-      proyectosPorFilas.push(proyectos.splice(0, 3)); // Extraer y añadir grupos de 3 proyectos
-    }
+  //   while (proyectos.length > 0) {
+  //     proyectosPorFilas.push(proyectos.splice(0, 3)); // Extraer y añadir grupos de 3 proyectos
+  //   }
 
-    return proyectosPorFilas;
-  }
+  //   return proyectosPorFilas;
+  // }
 }
