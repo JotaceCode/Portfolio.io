@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { url } from 'node:inspector';
 
 @Component({
   selector: 'app-tarjeta',
@@ -37,6 +38,15 @@ export class TarjetaComponent implements OnInit {
       url: '',
       github: '',
     },
+    {
+      urlImage: '../assets/images/flowers.png',
+      titulo: 'Pixel Run',
+      descripcion:
+        'Juego 2D clásico desarrollado en javascript.',
+      tecnologias: ['HTML', 'Tailwind', 'JavaScript', 'Node'],
+      url: '',
+      github: 'https://github.com/JotaceCode/Pixel-Run',
+    }
   ];
 
   listProyectos = this.listProyectosR.reverse();
