@@ -19,6 +19,7 @@
 .descripcion{
     font-size: 0.8rem;
     color: #A9A9A9;
+    text-overflow: ellipsis;
 }
 
 a{
