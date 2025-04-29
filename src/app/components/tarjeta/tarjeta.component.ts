@@ -20,6 +20,7 @@ export class TarjetaComponent implements OnInit {
       tecnologias: ['Angular', 'HTML', 'CSS', 'C#','MongoDB', 'SQLserver'],
       url: 'https://optimistic-knuth.87-106-236-123.plesk.page',
       github: 'https://github.com/JotaceCode/TFG-DAW24',
+      estado: 'Finalizado',
     },
     {
       urlImage: '../assets/images/Captura.PNG',
@@ -28,6 +29,7 @@ export class TarjetaComponent implements OnInit {
       tecnologias: ['React', 'HTML', 'CSS', 'Node', 'Next.js', 'Tailwind', 'MySQL'],
       url: 'https://safe-password-generator-vert.vercel.app',
       github: '',
+      estado: 'Activo',
     },
     {
       urlImage: '../assets/images/capt.png',
@@ -37,6 +39,7 @@ export class TarjetaComponent implements OnInit {
       tecnologias: ['Angular', 'HTML', 'CSS', 'Tailwind'],
       url: '',
       github: '',
+      estado: 'En desarrollo',
     },
     {
       urlImage: '../assets/images/flowers.png',
@@ -46,6 +49,7 @@ export class TarjetaComponent implements OnInit {
       tecnologias: ['HTML', 'Tailwind', 'JavaScript', 'Node'],
       url: '',
       github: 'https://github.com/JotaceCode/Pixel-Run',
+      estado: 'En desarrollo',
     }
   ];
 

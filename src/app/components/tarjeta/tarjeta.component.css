@@ -28,6 +28,36 @@ a{
   cursor: pointer;
 }
 
+.endesarrollo{
+  font-size: 0.6rem;
+  color: #eb8c34;
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #eb8c34;
+  border-radius: 5px;
+  background-color: #4a341f;
+  
+}
+
+.activo{
+  background-color: #294a1f;
+  border: 1px solid #5feb34;
+  color: #5feb34;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.finalizado{
+  background-color: #474747;
+  border: 1px solid #e4e4e4;
+  color: #e4e4e4;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
 
 .fa-brands{
