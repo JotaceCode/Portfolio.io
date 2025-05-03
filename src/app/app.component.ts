@@ -7,11 +7,12 @@ import { WindowCodeComponent } from './components/window-code/window-code.compon
 import { SeparatorComponent } from './components/separator/separator.component';
 import { GridTechComponent } from './components/grid-tech/grid-tech.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DownloadButton } from './components/cv--dl-button/nav-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TarjetaComponent,  TimelineComponent, HeaderComponent, WindowCodeComponent, SeparatorComponent, GridTechComponent, FooterComponent],
+  imports: [RouterOutlet, TarjetaComponent,  TimelineComponent, HeaderComponent, WindowCodeComponent, SeparatorComponent, GridTechComponent, FooterComponent, DownloadButton],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
