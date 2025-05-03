@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-window-code',
+  imports: [],
   standalone: true,
   templateUrl: './window-code.component.html',
   styleUrl: './window-code.component.css'
