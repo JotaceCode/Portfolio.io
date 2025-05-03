@@ -5,8 +5,8 @@ import { RouterLink } from '@angular/router';
   selector: 'app-download-button',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  templateUrl: './cv--dl-button.component.html',
+  styleUrl: './cv--dl-button.component.css'
 })
 export class DownloadButton {
 
