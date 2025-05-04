@@ -10,7 +10,7 @@
 .contenedor figure{
     position: relative;
     width: 280px;
-    height: 150px;
+    height: 90px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -44,3 +44,14 @@
 .contenedor figure:hover > img{
     transform: scale(1.8);
 }
+
+.titulo--card{
+    color:#ffffff;
+    font-size: 1.5rem;
+}
+
+.subtitulo--card{
+    color:#ffffff;
+    font-size: 1rem;
+}
+

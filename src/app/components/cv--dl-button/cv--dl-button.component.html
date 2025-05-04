@@ -1,11 +1,51 @@
-<div class="contenedor py-4"
->
-    <figure>
-        <img src="assets/images/cv.jpg" alt="">
-        <div class="capa flex flex-col justify-center items-center text-center"
-        (click)="downloadCV()">
-            <h2>DESCARGAR CV</h2>
-            <p>Descarga mi CV actualizado</p>
-        </div>
-    </figure>
+<div class="flex flex-col justify-around items-center gap-4">
+    <!-- item 0 -->
+    <div class="contenedor"
+    >
+        <figure>
+            <img src="assets/images/cv.jpg" alt="">
+            <div class="capa flex flex-col justify-center items-center text-center"
+            (click)="downloadCV()">
+                <h2 class="titulo--card">DESCARGAR CV</h2>
+                <p class="subtitulo--card">Descarga mi CV actualizado</p>
+            </div>
+        </figure>
+    </div>
+    <!-- item -->
+    <div class="contenedor"
+    >
+        <figure>
+            <img src="assets/images/JCVS-toy.png" alt="muñeco realista con IA">
+            <div class="capa flex flex-col justify-center items-center text-center"
+            >
+                <h2 class="titulo--card">Último proyecto</h2>
+                <p class="subtitulo--card">Título proyecto</p>
+            </div>
+        </figure>
+    </div>
+    <!-- item -->
+    <div class="contenedor"
+    >
+        <figure>
+            <img src="assets/images/magia.jpg" alt="muñeco realista con IA">
+            <div class="capa flex flex-col justify-center items-center text-center"
+            >
+                <h2 class="titulo--card">¿Hacemos Magia?</h2>
+                
+                <p class="subtitulo--card">¡Escríbeme!</p>
+            </div>
+        </figure>
+    </div>
+<!-- item  -->
+    <div class="contenedor"
+    >
+        <figure>
+            <img src="assets/images/comand.png" alt="muñeco realista con IA">
+            <div class="capa flex flex-col justify-center items-center text-center"
+            >
+                <h2 class="titulo--card">Te escucho</h2>
+            </div>
+        </figure>
+    </div>
 </div>
+
