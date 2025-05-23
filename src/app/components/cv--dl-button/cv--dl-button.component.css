@@ -43,6 +43,7 @@
 
 .contenedor figure:hover > img{
     transform: scale(1.8);
+    filter: blur(2px);
 }
 
 .titulo--card{
@@ -56,6 +57,7 @@
 .subtitulo--card{
     color:#ffffff;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 
