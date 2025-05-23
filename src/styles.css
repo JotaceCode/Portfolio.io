@@ -3,8 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background: #000512 !important; 
-    
+    background: linear-gradient(to bottom, #22467c, #000512, #283d70); 
 }
 .title {
     font-family: "Silkscreen", sans-serif;
